@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-size: cover;
+    color: black;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#services {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+#services ul {
+    list-style-type: none;
+}
+
+#about {
+    padding: 50px 20px;
+}
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: none;
+}
+
+#contact form button {
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Добавляем стили для баннера */
+.banner {
+    width: 100%; /* Ширина будет занимать всю доступную ширину */
+    height: auto; /* Сохраняем соотношение сторон */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;  /* Ensure the image and the text are aligned vertically */
+	max-width: 100px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+/* Медиа-запрос для устройств с шириной экрана менее 600px (например, для мобильных устройств) */
+@media only screen and (max-width: 600px) {
+    .banner {
+        width: 100%; /* Устанавливаем ширину на всю доступную ширину */
+        height: auto; /* Сохраняем соотношение сторон */
+    }
+	.slider, .slide {
+        width: 100%;
+    }
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+    header, section, footer {
+        padding: 10px;
+    }
+}
+
+/* Стили для кнопок WhatsApp и Telegram */
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fixed-buttons a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Стили для иконок кнопок */
+.fixed-buttons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.fixed-buttons img:hover {
+    transform: scale(1.1);
+    border-color: #000;
+}
+
+/* Остальные стили остаются без изменений */
+
+/* Стили для слайдера */
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 230px; /* Adjust based on your image height */
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* Adjust if adding more slides */
+    position: relative;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    width: 33.3333%; /* Each slide is one-third of the container width */
+    flex: 0 0 auto;
+}
+
+img {
+    width: 66%;
+    height: auto;
+	margin-right: 20px; 
+}
+
+/* Стили для кнопок WhatsApp и Telegram */
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fixed-buttons a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.fixed-buttons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.fixed-buttons img:hover {
+    transform: scale(1.1);
+    border-color: #000;
+}
+
+
+
+
+		
+		

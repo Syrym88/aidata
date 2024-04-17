@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDATA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="aidataicon.png">		
+</head>
+<body>
+    <header> 
+    <div class="logo-container">
+        <img src="aidataicon.png" alt="AIDATA Icon" class="logo-container">
+        <h1> AIDATA</h1>
+    </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+		<img src="aidata_dwh.png" alt="Баннер" class="banner">
+    </header>
+	
+    <section id="hero">
+        <div class="hero-content">
+            <h2>AIDATA разрабатываем, внедряем и поддерживаем хранилища данных и BI-инструменты</h2>
+            <p>Получите профессиональные услуги от ведущих экспертов в сфере аналитики данных</p>
+            <a href="#contact" class="btn">Связаться с нами</a>
+        </div>
+    </section>
+
+
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <ul>
+			<h1>Оптимизация бизнес-аналитики с помощью хранилищ данных</h1>
+    <p>Разработка хранилища данных позволяет компаниям интегрировать и анализировать информацию из различных бизнес-приложений, обеспечивая доступ к единой и актуализированной базе данных. Это значительно ускоряет процесс создания отчетов и аналитических панелей, повышая эффективность принятия решений на всех уровнях управления.</p>
+    <p>Преимущество на рынке</p>
+    <p>Внедрение хранилища данных дает компаниям возможность глубокого анализа рыночных тенденций и оптимизации бизнес-процессов, предоставляя значительное конкурентное преимущество. Централизация данных также помогает сократить затраты на их хранение и поддержку, упрощая резервное копирование и восстановление.</p>
+          <h1>Внедрение BI-инструментов</h1>
+	<p>Внедрение инструментов бизнес-аналитики (BI) трансформирует способы анализа данных в вашей компании, позволяя принимать обоснованные решения на основе актуальной и комплексной информации. Это повышает эффективность бизнес-процессов и оптимизирует стратегическое планирование.</p>
+    <p>BI-инструменты обеспечивают глубокий анализ данных, визуализацию результатов в виде информативных дашбордов и отчетов, что делает аналитику доступной для всех уровней управления. Использование передовых технологий анализа данных, таких как машинное обучение и искусственный интеллект, позволяет выявлять скрытые закономерности и предсказывать тенденции.</p>
+    <p>Партнерство с нашей компанией в области внедрения BI-инструментов гарантирует вам не только подбор оптимальных решений под конкретные задачи вашего бизнеса, но и полную поддержку на всех этапах работы: от анализа потребностей до обучения персонала и технической поддержки после внедрения.</p>
+
+            <h1>Поддержка и обслуживание</h1>
+        </ul>
+		
+    </section>
+</p>
+<!-- Adding a slider -->
+<div class="slider" id="slider1">
+    <div class="slides">
+        <div class="slide"><img src="greenplum.svg" alt="Greenplum"></div>
+        <div class="slide"><img src="clickhouse.svg" alt="ClickHouse"></div>
+        <div class="slide"><img src="pxf.svg" alt="ClickHouse"></div>
+		<div class="slide"><img src="oracle.svg" alt="Oracle"></div>
+		<div class="slide"><img src="powerbi.jpg" alt="PowerBI"></div>
+		<div class="slide"><img src="superset.jpg" alt="PowerBI"></div>
+    </div>
+</div>
+<div class="slider" id="slider2">
+    <div class="slides">
+        <div class="slide"><img src="postgresql.jpg" alt="Greenplum"></div>
+        <div class="slide"><img src="airflow.png" alt="ClickHouse"></div>
+        <div class="slide"><img src="odi.jpg" alt="ClickHouse"></div>
+		<div class="slide"><img src="nifi.jpg" alt="Oracle"></div>
+		<div class="slide"><img src="hadoop.jpg" alt="PowerBI"></div>
+		<div class="slide"><img src="openmetadata.jpg" alt="PowerBI"></div>
+    </div>
+</div>
+	
+	
+    <section id="about">
+        <h2>О нас</h2>
+        <p>AIDATA - команда опытных специалистов, готовых помочь вашей компании в оптимизации работы с данными и повышении эффективности вашего бизнеса.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами, чтобы получить бесплатную консультацию:</p>
+		
+		  <div class="fixed-buttons">
+        <a href="https://wa.me/+77714438894" target="_blank" class="whatsapp"><img src="whatsapp.png" alt="WhatsApp"></a>
+        <a href="tg://resolve?domain=@syrym123" target="_blank" class="telegram"><img src="telegram.png" alt="Telegram"></a>
+         </div>
+		
+        <form action="sendmail.php" method="POST">
+            <input type="text" id="name" name="name"  placeholder="Ваше имя" required>
+            <input type="email" id="email" name="email" placeholder="Ваш Email" required>
+            <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ваше название компании. Все права защищены.</p>
+    </footer>
+	
+	  <!-- Подключаем скрипт слайдера -->
+    <script src="slider.js"></script>
+</body>
+</html>

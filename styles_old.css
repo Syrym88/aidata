@@ -1,0 +1,47 @@
+:root {
+    --main-bg-color: #333;
+    --text-color: #fff;
+    --footer-bg-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
