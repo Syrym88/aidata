@@ -111,15 +111,41 @@
 	
 	  <!-- Подключаем скрипт слайдера -->
 	<script src="slider.js"></script>
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'ru',  // Установите язык страницы
-    includedLanguages: 'en,kk',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
+<script>
+function loadGoogleTranslate() {
+    var newScript = document.createElement('script');
+    newScript.type = 'text/javascript';
+    newScript.async = true;
+    newScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(newScript);
 }
+
+function translateLanguage(language) {
+    if (!window.google || !window.google.translate || !window.google.translate.TranslateElement) {
+        window.googleTranslateElementInit = function() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'ru',
+                includedLanguages: 'ru,en,kk',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'hidden_translate_element');
+        };
+        loadGoogleTranslate();
+    }
+
+    setTimeout(function() {
+        var selectField = document.querySelector(".goog-te-combo");
+        if (selectField) {
+            selectField.value = language;
+            selectField.dispatchEvent(new Event('change'));
+        }
+    }, 1000); // Adjust timing as needed
+}
+
+window.onload = function() {
+    translateLanguage('ru'); // Initialize with Russian or default language
+};
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div id="hidden_translate_element" style="display:none;"></div>
 </body>
 </html>
