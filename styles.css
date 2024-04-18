@@ -197,64 +197,18 @@ img {
     border-color: #000;
 }
 
-#google_translate_element {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.goog-te-banner-frame.skiptranslate {
-    display: none !important;
-}
-
-body {
-    top: 0px !important;
-}
-
-.goog-te-gadget-simple {
+.language-selector button {
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #4CAF50; /* Зеленый */
+    color: white;
     border: none;
-    background-color: #f9f9f9; /* Цвет фона */
-    color: #555; /* Цвет текста */
-}
-
-.goog-te-gadget-simple a.goog-te-menu-value:hover {
-    text-decoration: none;
-}
-
-.goog-te-gadget-simple a.goog-te-menu-value span {
-    color: #555;
-}
-
-.goog-te-gadget-simple .goog-te-menu-value {
-    padding: 10px;
-    display: block;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    white-space: nowrap;
+    border-radius: 4px;
     cursor: pointer;
-    background-color: #f9f9f9;
 }
 
-.goog-te-gadget-icon {
-    display: none;
-}
-
-/* Стиль для выпадающего меню */
-.goog-te-menu-frame {
-    max-width: 100%;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    border: 1px solid #ccc; /* Граница */
-}
-
-.goog-te-menu2 {
-    max-width: 100%;
-    overflow-y: scroll; /* Добавляет прокрутку если необходимо */
-    box-sizing: border-box;
-    height: auto;
-    max-height: 200px; /* Максимальная высота выпадающего меню */
+.language-selector button:hover {
+    background-color: #45a049;
 }
 
 
