@@ -3,80 +3,12 @@ body {
     padding-top: 70px;
 
 }
+
 .logo img {
     height: 50px; /* Adjust the size as necessary */
     width: auto; /* Keeps the image aspect ratio intact */
 }
 
-:root {
-	--x: 0;
-	--y: 0;
-	--xp: 0;
-	--yp: 0;
-	--hue: calc(0 + (var(--xp) * 500));
-	--bg: hsl(0, 0%, 10%);
-	--size: 100px;
-	--glow: radial-gradient(50% 50% at center,
-			hsl(var(--hue) 80% 85%),
-			hsl(var(--hue) 80% 70%),
-			transparent) calc((var(--x) * 1px) - (var(--size) * 0.5)) calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size) no-repeat fixed;
-}
-
-.controls {
-	position: fixed;
-	top: 2rem;
-	right: 2rem;
-}
-
-button {
-	border-radius: 1rem;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 0.1ch;
-	background: var(--bg);
-	border: 4px solid transparent;
-	box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
-	cursor: pointer;
-	background:
-		linear-gradient(var(--bg), var(--bg)) padding-box,
-		var(--glow),
-		linear-gradient(gray, gray) border-box;
-	transition: background-size 0.24s;
-	touch-action: none;
-	position: relative;
-	padding: 1rem 2rem;
-}
-button::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
-	background: var(--bg);
-	z-index: 2;
-	border-radius: 1rem;
-}
-button span {
-	background: var(--glow), white;
-	background-clip: text;
-	color: transparent;
-	height: 100%;
-	width: 100%;
-	z-index: 2;
-	position: relative;
-	inset: 0;
-}
-:root:has(button:active) {
-	--size: 300px;
-}
-button::after {
-	content: "";
-	position: absolute;
-	inset: -4px;
-	filter: blur(20px);
-	border: 4px solid transparent;
-	background: var(--glow);
-	border-radius: 1rem;
-}
 
 .navbar {
     display: flex;
@@ -88,7 +20,7 @@ button::after {
     left: 0; /* Align left edge of navbar with left edge of the viewport */
     right: 0; /* Align right edge of navbar with right edge of the viewport */
     background-color: #fff; /* Background color for visibility */
-    box-shadow: 0 2px 5px rgba(247, 245, 245, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     z-index: 100; /* Ensure navbar is above other content */
 }
 
@@ -116,7 +48,37 @@ button::after {
     font-weight: bold;
 }
 
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
 
+.team-member {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px 75px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.member-info h2, .member-info p {
+    margin: 0;
+    text-align: center;
+}
 
 .title {
     font-size: 16px;
@@ -181,6 +143,10 @@ ul li {
     cursor: pointer;
 }
 
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
 
 #data-integration { background-color: #e3f2fd; }
 #data-modeling { background-color: #e1bee7; }
@@ -254,6 +220,63 @@ ul li {
         width: 90%;
     }
 }
+
+
+.header-content {
+    text-align: center;
+    padding: 80px 20px; /* Generous padding for better spacing */
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Stylish gradient background */
+    color: white; /* White text for better contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-content h1 {
+    font-size: 3rem; /* Large font size for the main title */
+    font-weight: bold; /* Bold font weight for impact */
+    margin-bottom: 20px; /* Space between the title and subtitle */
+}
+
+.header-content .subtitle {
+    font-size: 1.5rem; /* Substantial font size for subtitle */
+    max-width: 600px; /* Max width for better readability */
+    margin: 0 auto 30px; /* Auto margins for horizontal centering, with space before the button */
+    opacity: 0.9; /* Slightly lower opacity for a subtle look */
+}
+
+.header-content .header-button {
+    font-size: 1.2rem; /* Font size for the button */
+    padding: 15px 30px; /* Padding for a larger, more clickable area */
+    background-color: #ffffff; /* Contrasting background color for the button */
+    color: #6a82fb; /* Color that matches the darker side of the gradient */
+    border-radius: 50px; /* Rounded borders for a modern, friendly look */
+    border: none; /* No border for a cleaner appearance */
+    cursor: pointer; /* Cursor indicates the element is clickable */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.header-content .header-button:hover {
+    background-color: #fc5c7d; /* Darker shade on hover for visual feedback */
+    color: white; /* White text on hover for better visibility */
+    transform: scale(1.05); /* Slight increase in scale on hover */
+}
+
+
+@media (max-width: 768px) {
+    .header-content {
+        padding: 90px 30px; /* Reduced padding on smaller screens */
+        height: auto; /* Height adjusts to content size */
+        flex-direction: column; /* Maintains vertical layout */
+    }
+
+}
+
+
 
 
 /* Стили для кнопок WhatsApp и Telegram */
@@ -373,6 +396,48 @@ ul li {
     }
 }
 
+
+.teamcontainer {
+    background-color: #f8f9fa; /* Light grey background for the section */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Restricts the maximum width for readability */
+    border-radius: 8px; /* Softens the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.teamcontainer h2 {
+    color: #333; /* Dark color for the heading for contrast */
+    font-size: 24px; /* Suitable font size for headings */
+}
+
+.teamcontainer p {
+    color: #666; /* Dark gray text color */
+    line-height: 1.6; /* Increases the line height for better readability */
+}
+
+@media (max-width: 768px) {
+    .teamcontainer {
+        padding: 10px;
+        margin: 10px;
+    }
+    .teamcontainer h2 {
+        font-size: 20px;
+    }
+}
+
+
+.countdown-container {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#timer {
+    font-size: 2em;
+    margin: 20px;
+}
 
 
 

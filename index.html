@@ -2,150 +2,183 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="canonical" href="https://www.aidata.kz/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Откройте для себя, как наша компания трансформирует бизнес с помощью внедрения современных решений для хранилищ данных. Узнайте, как вы можете улучшить аналитику, повысить эффективность операций и обеспечить безопасность вашей корпоративной информации с помощью наших передовых технологий. Подробности читайте в нашей статье — ваш первый шаг к преобразованию бизнеса через инновационные системы управления данными.">
+    <meta name="description" content="Откройте для себя, как наша компания трансформирует бизнес с помощью внедрения современных решений для хранилищ данных. Улучшить аналитику, повысить эффективность операций и обеспечить безопасность вашей корпоративной информации с помощью наших передовых технологий">
+    <title>AIDATA Установка единого хранилища данных с визуализацией</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
 
-    <title>AIDATA</title>
-    <link rel="canonical" href="https://www.aidata.kz"> 	
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="aidataicon.png">		
 </head>
-<body>
-    <header> 
-    <div class="logo-container">
-        <img src="aidataicon.png" alt="AIDATA Icon" class="logo-container">
-        <h1> AIDATA</h1>
-    </div><div class="language-selector">
-    <button onclick="translateLanguage('ru')">Русский</button>
-    <button onclick="translateLanguage('en')">English</button>
-    <button onclick="translateLanguage('kk')">Қазақ</button>
-</div>
-        <nav>
-            <ul>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contact">Контакты</a></li>
+<body><section id="home"></section>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="AIDATA Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-key="home">Главная</a></li>
+                <li><a href="#about" data-key="about">О нас</a></li>
+                <li><a href="#services" data-key="services">Услуги</a></li>
+                <li><a href="#contact" data-key="contact">Контакты</a></li>
+                <li><a href="course.html">Курсы</a></li>
             </ul>
-        </nav>   
-		<img src="aidata_dwh.png" alt="Баннер" class="banner">
+                <ul class="language-selector">
+                    <a href="#" class="lang-btn">EN</a>
+                    <div class="languages-dropdown hidden">
+                        <a href="/en/" onclick="setLanguage('en'); return false;">EN</a>
+                        <a href="/ru/" onclick="setLanguage('ru'); return false;">RU</a>
+                        <a href="/kz/" onclick="setLanguage('kz'); return false;">KZ</a>
+                    </div>
+                </ul>
+        </nav>        
     </header>
-	
-    <section id="hero">
-        <div class="hero-content">
-            <h2>AIDATA разрабатываем, внедряем и поддерживаем хранилища данных и BI-инструменты</h2>
-            <p>Получите профессиональные услуги от ведущих экспертов в сфере аналитики данных</p>
-            <a href="#contact" class="btn">Связаться с нами</a>
+    <p></p>
+    <div class="header-content">
+        <h1 data-key="headerTitle">AIDATA - Установка хранилище данных  с визуализацией</h1>
+        <p class="subtitle" data-key="headerSubtitle">Продвинутая IT архитектура и решения в области данных</p>
+        <a href="#contact" class="header-button" data-key="headerContact">Связаться с нами</a>
+    </div>
+    <section id="services"><p></p>
+        <h2 data-key="services">Services</h2>
+        <div class="service-list">
+            <div class="service-item" id="data-warehousing">
+                <h3 data-key="dataWarehousingTitle">Хранилище данных</h3>
+                <p data-key="dataWarehousingDesc">Создаем и поддерживаем масштабируемые хранилища данных для безопасного и эффективного хранения информации. Мы специализируемся на разработке индивидуальных решений для хранилищ данных (DWH) с нуля, а также на миграции данных для оптимизации бюджетных средств и ускорения работы. Доверьтесь нам в вопросах улучшения ваших возможностей по обработке данных с помощью передовых решений для хранения, соответствующих потребностям вашего бизнеса.</p>
+            </div>
+            <div class="service-item" id="data-integration">
+                <h3 data-key="dataIntegrationTitle">Интеграция данных</h3>
+                <p data-key="dataIntegrationDesc">Оптимальная интеграция данных из различных источников для всестороннего анализа и составления отчетов. Наши решения нацелены на оптимизацию потоков данных, повышение точности информации и предоставление единой картины, которая способствует принятию обоснованных бизнес-решений и повышению операционной эффективности.</p>
+            </div>
+            <div class="service-item" id="data-modeling">
+                <h3 data-key="dataModelingTitle">Моделирование данных</h3>
+                <p data-key="dataModelingDesc">Проектируем и создаем надежные модели данных для эффективной организации и визуализации информации. Наша команда экспертов гарантирует, что каждая модель адаптирована для повышения целостности и удобства использования данных, предоставляя вашему бизнесу четкие инсайты и улучшенные возможности принятия решений.</p>
+            </div>
+            <div class="service-item" id="data-quality">
+                <h3 data-key="dataQualityTitle">Управление качеством данных</h3>
+                <p data-key="dataQualityDesc">Обеспечем точность и надежность ваших данных для принятия обоснованных решений. Наши специализированные услуги помогут вам поддерживать идеальную целостность данных, снижать количество ошибок и повышать доверие к вашей аналитике. Оптимизируя качество данных, мы даем вашему бизнесу возможность работать более эффективно и принимать стратегические решения с уверенностью. Сотрудничайте с нами, чтобы превратить ваши данные в надежную основу вашего успеха.</p>
+            </div>
+            <div class="service-item" id="business-intelligence">
+                <h3 data-key="businessIntelligenceTitle">Бизнес-аналитика</h3>
+                <p data-key="businessIntelligenceDesc">Получайте полезные инсайты и визуализируйте данные для стратегического принятия решений. Наши решения в области аналитики позволяют вам анализировать сложные данные, выявлять тенденции и принимать обоснованные решения, которые стимулируют развитие вашего бизнеса.</p>
+            </div>
+            <div class="service-item" id="data-governance">
+                <h3 data-key="dataGovernanceTitle">Управление данными</h3>
+                <p data-key="dataGovernanceDesc">Установите надежные политики и процессы управления для обеспечения целостности и соответствия данных. Наши услуги по управлению данными разработаны для обеспечения точности ваших данных и соблюдения нормативных стандартов, создавая крепкую основу для всех ваших бизнес-операций. Доверьтесь нашим экспертам в реализации систем, которые защитят ваши данные и поддержат ваши стратегические цели. Сотрудничайте с нами для защиты ваших информационных активов и поддержания высочайших стандартов качества данных.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+    </section>
+    <div class="teamcontainer" >
+        <h2>Наш главный актив – это наша команда.</h2>
+        <p>AIDATA - команда опытных специалистов, готовых помочь вашей компании в оптимизации работы с данными и повышении эффективности вашего бизнеса. 
+            За последние несколько лет наши эксперты успешно реализовали множество проектов для широкого круга клиентов, от ведущих международных корпораций 
+            до динамично развивающихся предприятий малого и среднего бизнеса. Особую гордость вызывает наш вклад в финансовый и банковский секторы, 
+            где мы эффективно справлялись с высокосложными задачами и достигали выдающихся результатов. Наши специалисты профессионально владеют такими 
+            системами управления базами данных, как Greenplum, Oracle, Microsoft SQL, PostgreSQL, MySQL, и Clickhouse, что позволяет нам эффективно 
+            обрабатывать и анализировать большие объемы данных. Кроме того, мы эксперты в применении инструментов бизнес-аналитики, таких как Power BI, 
+            Superset и Tableau, что обеспечивает нашим клиентам мощные и гибкие решения для визуализации данных и поддержки принятия обоснованных решений</p>
+    </div>
+    
+    
+
+    <div class="team-container">
+        <div class="team-member">
+            <img src="alibek.jpg" alt="Алибек Худайбергенов" class="member-photo">
+            <div class="member-info">
+                <h2>Алибек Лотов</h2>
+                <p class="title">IT-архитектор в AIDATA</p>
+                <ul>
+                    <li>13+ лет опыта</li>
+                    <li>Разработка и сопровождение ПО</li>
+                    <li>PL/SQL, Oracle, PyCharm</li>
+                    <li>Hadoop, Spark</li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="aldabergen.jpg" alt="Алдаберген Сырым" class="member-photo">
+            <div class="member-info">
+                <h2>Алдаберген Сырым</h2>
+                <p class="title">Менеджер проектов</p>
+                <ul>
+                    <li>12 лет в IT</li>
+                    <li>Oracle, PL/SQL, управление проектами</li>
+                    <li>Эффективное руководство</li>
+                </ul>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="kanat.jpg" alt="Канат Болатович" class="member-photo">
+            <div class="member-info">
+                <h2>Канат Болатович</h2>
+                <p class="title">Data Engineer</p>
+                <ul>
+                    <li>12 лет в банковской сфере</li>
+                    <li>Oracle, PostgreSQL, Greenplum, Clickhouse</li>
+                    <li>Apache Nifi, pyspark, python</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="kuat.jpg" alt="Алманов Куат" class="member-photo">
+            <div class="member-info">
+                <h2>Алманов Куат</h2>
+                <p class="title">Java Backend Developer</p>
+                <ul>
+                    <li>13 лет в IT сфере</li>
+                    <li>Java, Springboot, Oracle, PostgreSQL, MongoDB</li>
+                    <li>B2G, B2C. kubernetes, Docker</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="teamcontainer" >
+    <h2>Наша миссия</h2> 
+    <p>Трансформировать данные в информацию и информацию в знания. Мы стремимся обеспечить вам возможность принимать обоснованные решения вовремя, опираясь на точные данные. Наши решения помогут вам действовать уверенно и эффективно в любой ситуации. Каждая компания, вне зависимости от размера, ежедневно генерирует огромные объемы данных через свои управленческие приложения. Хотя традиционно эти данные используются лишь для бухгалтерского учета и выставления счетов, они содержат в себе гораздо более значимую информацию, которая может выявить ключевые аспекты эффективности вашей деятельности. От человеческих ресурсов до маркетинга, от производственной цепочки до финансов, логистики и продаж — все отделы вашей компании могут значительно выиграть от глубокого анализа данных. Наша задача — помочь вам раскрыть и полноценно использовать скрытую ценность ваших данных, тем самым поднимая ваш бизнес на новый уровень эффективности и конкурентоспособности.</p>
+</div>
+
+
+		<div class="fixed-buttons">
+        <a href="https://wa.me/+77714438894" target="_blank" class="whatsapp"><img src="whatsapp.png" alt="WhatsApp"></a>
+        <a href="#" id="telegramLink" target="_blank" rel="noopener noreferrer" class="telegram"><img src="telegram.png" alt="Telegram">
+        </a>
+        </div>
+
+
+
+     <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@aidata.kz">info@aidata.kz</a></p>
+            <p>Phone: +7 771 443 88 94</p>
+            <div class="contact-form">
+                <form action="sendmail.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     </section>
 
 
-    <section id="services">
-        <h2>Наши услуги</h2>
-        <ul>
-			<h3>Оптимизация бизнес-аналитики с помощью хранилищ данных</h3>
-    <p>Разработка хранилища данных позволяет компаниям интегрировать и анализировать информацию из различных бизнес-приложений, обеспечивая доступ к единой и актуализированной базе данных. Это значительно ускоряет процесс создания отчетов и аналитических панелей, повышая эффективность принятия решений на всех уровнях управления.</p>
-    <p>Преимущество на рынке</p>
-    <p>Внедрение хранилища данных дает компаниям возможность глубокого анализа рыночных тенденций и оптимизации бизнес-процессов, предоставляя значительное конкурентное преимущество. Централизация данных также помогает сократить затраты на их хранение и поддержку, упрощая резервное копирование и восстановление.</p>
-          <h3>Внедрение BI-инструментов</h3>
-	<p>Внедрение инструментов бизнес-аналитики (BI) трансформирует способы анализа данных в вашей компании, позволяя принимать обоснованные решения на основе актуальной и комплексной информации. Это повышает эффективность бизнес-процессов и оптимизирует стратегическое планирование.</p>
-    <p>BI-инструменты обеспечивают глубокий анализ данных, визуализацию результатов в виде информативных дашбордов и отчетов, что делает аналитику доступной для всех уровней управления. Использование передовых технологий анализа данных, таких как машинное обучение и искусственный интеллект, позволяет выявлять скрытые закономерности и предсказывать тенденции.</p>
-    <p>Партнерство с нашей компанией в области внедрения BI-инструментов гарантирует вам не только подбор оптимальных решений под конкретные задачи вашего бизнеса, но и полную поддержку на всех этапах работы: от анализа потребностей до обучения персонала и технической поддержки после внедрения.</p>
-
-            <h3>Поддержка и обслуживание</h3>
-        </ul>
-		
-    </section>
-</p>
-<!-- Adding a slider -->
-<div class="slider" id="slider1">
-    <div class="slides">
-        <div class="slide"><img src="greenplum.svg" alt="Greenplum"></div>
-        <div class="slide"><img src="clickhouse.svg" alt="ClickHouse"></div>
-        <div class="slide"><img src="pxf.svg" alt="ClickHouse"></div>
-		<div class="slide"><img src="oracle.svg" alt="Oracle"></div>
-		<div class="slide"><img src="powerbi.jpg" alt="PowerBI"></div>
-		<div class="slide"><img src="superset.jpg" alt="PowerBI"></div>
+    <div class="countdown-container">
+        <h2>Эксклюзивные скидки на наши индивидуальные решения, обеспечивающие безопасность, масштабируемость и производительность. Не упустите шанс — акция скоро закончится! Забронируйте вашу бесплатную консультацию уже сегодня и заставьте ваши данные работать на вас.</h2>
+        <div id="timer">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <button onclick="location.href='info@aidata.kz'">Contact Us</button>
+        <button onclick="window.location='https://wa.me/+77714438894'">Take Free Consultation</button>
     </div>
-</div>
-<div class="slider" id="slider2">
-    <div class="slides">
-        <div class="slide"><img src="postgresql.jpg" alt="Greenplum"></div>
-        <div class="slide"><img src="airflow.png" alt="ClickHouse"></div>
-        <div class="slide"><img src="odi.jpg" alt="ClickHouse"></div>
-		<div class="slide"><img src="nifi.jpg" alt="Oracle"></div>
-		<div class="slide"><img src="hadoop.jpg" alt="PowerBI"></div>
-		<div class="slide"><img src="openmetadata.jpg" alt="PowerBI"></div>
-    </div>
-</div>
-	
-	
-    <section id="about">
-        <h2>О нас</h2>
-	<p>Наш главный актив – это наша команда.</p>
-        <p>AIDATA - команда опытных специалистов, готовых помочь вашей компании в оптимизации работы с данными и повышении эффективности вашего бизнеса. За последние несколько лет наши эксперты успешно реализовали множество проектов для широкого круга клиентов, от ведущих международных корпораций до динамично развивающихся предприятий малого и среднего бизнеса. Особую гордость вызывает наш вклад в финансовый и банковский секторы, где мы эффективно справлялись с высокосложными задачами и достигали выдающихся результатов. </p>
 
-	<h2>Наша миссия</h2> 
-	<p>Трансформировать данные в информацию и информацию в знания. Мы стремимся обеспечить вам возможность принимать обоснованные решения вовремя, опираясь на точные данные. Наши решения помогут вам действовать уверенно и эффективно в любой ситуации. Каждая компания, вне зависимости от размера, ежедневно генерирует огромные объемы данных через свои управленческие приложения. Хотя традиционно эти данные используются лишь для бухгалтерского учета и выставления счетов, они содержат в себе гораздо более значимую информацию, которая может выявить ключевые аспекты эффективности вашей деятельности. От человеческих ресурсов до маркетинга, от производственной цепочки до финансов, логистики и продаж — все отделы вашей компании могут значительно выиграть от глубокого анализа данных. Наша задача — помочь вам раскрыть и полноценно использовать скрытую ценность ваших данных, тем самым поднимая ваш бизнес на новый уровень эффективности и конкурентоспособности.</p>
-     </section>
-
-    <section id="contact">
-        <h2>Контакты</h2>
-        <p>Свяжитесь с нами, чтобы получить бесплатную консультацию:</p>
-		
-		  <div class="fixed-buttons">
-        <a href="https://wa.me/+77714438894" target="_blank" class="whatsapp"><img src="whatsapp.png" alt="WhatsApp"></a>
-        <a href="tg://resolve?domain=@syrym123" target="_blank" class="telegram"><img src="telegram.png" alt="Telegram"></a>
-         </div>
-		
-        <form action="sendmail.php" method="POST">
-            <input type="text" id="name" name="name"  placeholder="Ваше имя" required>
-            <input type="email" id="email" name="email" placeholder="Ваш Email" required>
-            <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
-            <button type="submit">Отправить</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Ваше название компании. Все права защищены.</p>
-    </footer>
-	
-	  <!-- Подключаем скрипт слайдера -->
-	<script src="slider.js"></script>
-<script>
-function loadGoogleTranslate() {
-    var newScript = document.createElement('script');
-    newScript.type = 'text/javascript';
-    newScript.async = true;
-    newScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(newScript);
-}
-
-function translateLanguage(language) {
-    if (!window.google || !window.google.translate || !window.google.translate.TranslateElement) {
-        window.googleTranslateElementInit = function() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'ru',
-                includedLanguages: 'ru,en,kk',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'hidden_translate_element');
-        };
-        loadGoogleTranslate();
-    }
-
-    setTimeout(function() {
-        var selectField = document.querySelector(".goog-te-combo");
-        if (selectField) {
-            selectField.value = language;
-            selectField.dispatchEvent(new Event('change'));
-        }
-    }, 1000); // Adjust timing as needed
-}
-
-window.onload = function() {
-    translateLanguage('ru'); // Initialize with Russian or default language
-};
-</script>
-
-<div id="hidden_translate_element" style="display:none;"></div>
+    <script src="app.js"></script>
 </body>
 </html>

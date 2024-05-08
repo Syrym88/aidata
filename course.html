@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://www.aidata.kz/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Курсы для IT специалистов и бизнес аналтиков. Учитесь у экспертов и получайте сертификаты">
+    <title>AIDATA помогаем освоить новое и стать IT-профессионалом</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+
+</head>
+<body>
+    <section id="home"></section>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="AIDATA Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-key="home">Главная</a></li>
+                <li><a href="#about" data-key="about">О нас</a></li>
+                <li><a href="#services" data-key="services">Услуги</a></li>
+                <li><a href="#contact" data-key="contact">Контакты</a></li>
+                <li><a href="course.html">Курсы</a></li>
+            </ul>
+                <ul class="language-selector">
+                    <a href="#" class="lang-btn">EN</a>
+                    <div class="languages-dropdown hidden">
+                        <a href="/en/" onclick="setLanguage('en'); return false;">EN</a>
+                        <a href="/ru/" onclick="setLanguage('ru'); return false;">RU</a>
+                        <a href="/kz/" onclick="setLanguage('kz'); return false;">KZ</a>
+                    </div>
+                </ul>
+        </nav>        
+    </header>
+    <p></p>
+    <section id="services"><p></p>
+        <h2 data-key="services">Курсы</h2>
+        <div class="service-list">
+            <div class="service-item" id="data-warehousing">
+                <h3 data-key="OracleCourse">Мастер баз данных Oracle:</br> от нуля до профи в банковском деле и финансах</h3>
+                <p data-key="dataOracle">Целевая аудитория:    Студенты финансовых специальностей, заинтересованные в IT.
+                    IT-специалисты, желающие переквалифицироваться в финансовую сферу.
+                    Работники банков и финансовых организаций, стремящиеся улучшить свои технические навыки.
+                    Начинающие разработчики и аналитики данных.
+                    Специалисты IT, желающие расширить свои знания в области управления базами данных.</p>
+                    <p>продолжительность обучения: 3 месяца</p>
+                    <p>Стажировка: 3 месяца с последуйшим трудоустроиством</p>
+                    <p>Оплату можно раздить по месячно</p>
+                    Code course:142</br> <button onclick="window.location.href = 'SQLcourse.html';"><span>Цена за месяц обучения 70 000 KZT</span</button>
+            </div>
+            <div class="service-item" id="data-integration">
+                <h3 data-key="JavaCourse">Java Development Essentials:</br>  От основ до профессионального программирования</h3>
+                <p data-key="dataJava">Целевая аудитория:    Студенты и начинающие программисты, заинтересованные в освоении Java.
+                    Программисты других языков, стремящиеся изучить Java для расширения своих компетенций.
+                    IT-профессионалы, нуждающиеся в изучении Java для профессионального роста или смены карьеры.</p>
+                    <p data-key="Course">   Формат: онлайн</p>
+                    <p>продолжительность обучения: 4 месяца</p>
+                    <p>Стажировка: 3 месяца с последуйшим трудоустроиством</p>
+                    Code course:161</br> <button onclick="window.location.href = 'JavaCourse.html';"><span>Цена за месяц обучения 75 000 KZT</span></button>
+            </div>
+            <div class="service-item" id="data-modeling">
+                <h3 data-key="PythonCourse">Data Science with Python:</br>  Mastering Pandas, NumPy and Matplotlib</h3>
+                <p data-key="dataPython">Целевая аудитория:    Студенты и профессионалы, заинтересованные в анализе данных и научных вычислениях.
+                    Специалисты в области IT, желающие расширить свои знания в области обработки данных.
+                    Исследователи и аналитики, стремящиеся использовать Python для обработки и визуализации данных.</p>
+                    <p data-key="Course">   Формат: онлайн</p>
+                    <p>продолжительность обучения: 3 месяца</p>
+                    <p>Стажировка: 3 месяца с последуйшим трудоустроиством</p>
+                    Code course:152</br> <button onclick="window.location.href = 'PythonCourse.html';"><span>Цена за месяц обучения 119 000 KZT</span></button>
+            </div>
+            <div class="service-item" id="data-quality">
+                <h3 data-key="LinuxCourse">Мастер DevOps:</br>  От Новичка до Эксперта</h3>
+                <p data-key="dataLinux">Целевая аудитория:    IT-специалисты, начинающие свой путь в области системного администрирования.
+                    Студенты технических специальностей, заинтересованные в изучении операционных систем на базе Unix и Docker Kubernets.
+                    Разработчики программного обеспечения, желающие глубже понять системное окружение, в котором работают их приложения.</p>
+                    <p data-key="Course">   Формат: онлайн</p>
+                    <p>продолжительность обучения: 2 месяца</p>
+                    <p>Стажировка: 3 месяца с последуйшим трудоустроиством</p>
+                    Code course:145</br> <button ionclick="window.location.href = 'DevOpsCourse.html';"><span>Цена за месяц 90 000 KZT</span></button>
+            </div>
+            <div class="service-item" id="business-intelligence">
+                <h3 data-key="BICourse">Мастер Business Intelligence:</br>From Data to Insights with Power BI, Tableau, Qlik Sense and Superset </h3>
+                <p data-key="dataBI">Целевая аудитория: Специалисты по данным и аналитики, стремящиеся расширить свои навыки в BI.
+                    Менеджеры и бизнес-аналитики, заинтересованные в улучшении своих навыков визуализации и анализа данных.
+                    IT-профессионалы и консультанты, желающие внедрять BI решения в организациях.</p>
+                    <p data-key="Course">Формат: онлайн</p>
+                    <p>продолжительность обучения: 2 месяца</p>
+                    <p>Стажировка: 3 месяца с последуйшим трудоустроиством</p>
+                    Code course:141</br> <button onclick="window.location.href = 'BICourse.html';"><span>Цена за месяц 80 000 KZT</span></button>
+            </div>
+            <div class="service-item" id="data-governance">
+                <h3 data-key="FullStackCourse">Full Stack Development:</br> Stack JavaScript, React, and React Native</h3>
+                <p data-key="dataFullStack">Целевая аудитория:
+                    Разработчики, желающие освоить создание кроссплатформенных приложений.
+                    Веб-разработчики, заинтересованные в расширении своих навыков на мобильную разработку.
+                    Начинающие программисты, стремящиеся стать full-stack разработчиками.</p>
+                    <p data-key="Course">   Формат: онлайн</p>
+                    <p>продолжительность обучения: 4 месяца</p>
+                    <p>Стажировка: 3 месяца с последуйшим трудоустроиством</p>
+                   Code course:172</br> <button onclick="window.location.href = 'FullStackCourse.html';"><span>Цена за месяц 90 000 KZT</span></button>
+            </div>
+        </div>
+    </section>
+    
+   
+
+    <script>
+    document.getElementById('payButton').onclick = function() {
+        // Call backend to initiate payment process
+        fetch('/start-payment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({amount: 1000, description: 'Example payment'}) // Example payment
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Redirect to Wooppay payment page
+            window.location.href = data.paymentUrl;
+        })
+        .catch(error => console.error('Error initiating payment:', error));
+    };
+    </script>
+    
+    
+
+		<div class="fixed-buttons">
+        <a href="https://wa.me/+77714438894" target="_blank" class="whatsapp"><img src="whatsapp.png" alt="WhatsApp"></a>
+        <a href="#" id="telegramLink" target="_blank" rel="noopener noreferrer" class="telegram"><img src="telegram.png" alt="Telegram">
+        </a>
+        </div>
+
+
+
+     <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@aidata.kz">info@aidata.kz</a></p>
+            <p>Phone: +7 771 443 88 94</p>
+            <div class="contact-form">
+                <form action="sendmail.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit"><span>получи Road Map + Подробную программу курса</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
